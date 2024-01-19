@@ -1,21 +1,38 @@
 .main {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  position: relative;
+  gap: 10px;
+  /* overflow: hidden;
+  position: relative; */
+  perspective: 200px;
 }
 
 .box-1 {
-  position: absolute;
+  /* position: absolute; */
   background-color: red;
   height: 150px;
-  width: 100%;
+  width: 150px;
   transition-duration: 500ms;
   transition-timing-function: ease;
 }
 
+.box-2 {
+  /* position: absolute; */
+  background-color: blue;
+  height: 150px;
+  width: 150px;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+  transform-origin: center;
+}
+
 .box-1:hover {
-  transform: translateY(150px);
+  transform: rotate(45deg);
+}
+
+.box-2:hover {
+  transform: rotateZ(90deg);
 }
