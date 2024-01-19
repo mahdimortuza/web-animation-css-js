@@ -1,4 +1,28 @@
-* {
+/* clip path transition  */
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: tomato;
+  width: 500px;
+  padding: 20px;
+  border-radius: 20px;
+  clip-path: circle(5% at 95% 20%);
+  transition: all ease-in-out 500ms;
+}
+
+.card:hover {
+  clip-path: circle(70.7% at 50% 50%);
+}
+
+/* loading animation  */
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -54,7 +78,7 @@
     transform: translateX(-250px) rotate(360deg);
     z-index: 6;
   }
-}
+} */
 
 /* for transition  */
 /*.main {
